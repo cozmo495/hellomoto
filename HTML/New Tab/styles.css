@@ -1,8 +1,15 @@
 h2 {
     text-align: center;
 }
-h1  {
+h1 {
     text-align: center;
     position: relative;
-    bottom: 45px;
+    top: 300px;
+    font-size: 45px;
+}
+form {
+    text-align: center;
+    position: relative;
+    top: 325px;
+    font-size: 25px;
 }
