@@ -11,26 +11,8 @@
             <input type="text" id="searchquery" name="search" placeholder="Enter Search Query">
             <button type="submit" id="searchqueryconfirm" name="searchquerybutton">Search</button>
         </form>
-        <p>Click the button to search for your query.</p>
+        <p id="instructions">Click the button to search for your query.</p>
         <p id ="searchconfirmation"></p>
-        <script>
-             document.querySelector('#searchqueryform').addEventListener('submit', function(event) {
-      // This function is called when the form is submitted
-        // Listens for the submit event on the search form
-      console.log('Search button clicked'); // Log when the search is submitted for debugging
-      event.preventDefault(); // Prevent the form from submitting
-      // Get the value of the input field
-      const input = document.querySelector('#searchquery').value; // Get the value
-      console.log(`Searching for, ${input}!`); // Log the input value
-            document.getElementById('searchconfirmation').textContent = `Searching for: ${input}`; // Display the search confirmation before redirecting
-             console.log(`Search confirmed: ${input}`); // Log the search confirmation for debugging
-            // Simulate a delay before redirecting
-            setTimeout(() => {
-                console.log(`Redirecting to DuckDuckGo with query: ${input}`);
-                // Redirect to DuckDuckGo with the search query
-            window.location.href = `https://duckduckgo.com/?q=${encodeURIComponent(input)}`;
-            }, 3000);
-    });
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>

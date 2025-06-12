@@ -13,3 +13,15 @@ form {
     top: 325px;
     font-size: 25px;
 }
+#instructions {
+    text-align: center;
+    position: relative;
+    top: 350px;
+    font-size: 20px;
+}
+#searchconfirmation {
+    text-align: center;
+    position: relative;
+    top: 375px;
+    font-size: 20px;
+}
