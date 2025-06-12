@@ -11,7 +11,7 @@
             // Simulate a delay before redirecting of 2 seconds
             setTimeout(() => {
                 console.log(`Redirecting to DuckDuckGo with query: ${input}`);
-                // Redirect to DuckDuckGo with the search query
-            window.location.href = `https://duckduckgo.com/?q=${encodeURIComponent(input)}`;
+                // Redirect to Bing with the search query
+            window.location.href = `https://bing.com/search?q=${encodeURIComponent(input)}`;
             }, 2000);
     });
