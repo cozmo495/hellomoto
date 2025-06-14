@@ -49,10 +49,25 @@ input[type="text"] {
     opacity: 0.3; /* Setting initial opacity to 0.5 */
     background-color: black; /* Setting background color to black */
 }
-textarea:focus, input:focus {
-    color: #ffffff;
+input[type="text"]:focus {
+    opacity: 1; /* Full opacity on focus */
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle shadow on focus */
+}
+input[type="text"]::placeholder {
+    color: white; /* Placeholder text color */
+    opacity: 1; /* Placeholder text opacity */
+    text-align: center; /* Centering the placeholder text */
+    font-family: "inter tight", sans-serif; /* Applying the imported font to placeholder */
+}
+button[id="searchqueryconfirm"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.5); /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
 }
 
-input, select, textarea{
-    color: #ffffff;
-}
