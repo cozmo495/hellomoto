@@ -65,9 +65,25 @@ button[id="searchqueryconfirm"] {
     font-size: 16px;
     border: none;
     border-radius: 16px;
-    background-color: rgba(0, 0, 0, 0.5); /* Button background color */
+    background: linear-gradient(to right, #000000, #0062ff); /* Change background on hover */
     color: white; /* Button text color */
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+    transition: transform 0.7s ease; /* Smooth transition for hover effects */
 }
-
+input[type="radio"] {
+    background: linear-gradient(to right, #000000, #0052ff);
+}
+input[type="radio"]:hover {
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+input[type="radio"]:active {
+    background: linear-gradient(to right, #0052ff, #ffffff);
+    transform: scale(0.95); 
+}
+button[id="searchqueryconfirm"]:hover {
+    background: linear-gradient(to right, #3d3d3d, #0062ff); /* Change background on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+button[id="searchqueryconfirm"]:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+}

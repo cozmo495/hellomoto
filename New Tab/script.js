@@ -2,6 +2,10 @@ document.querySelector('#searchqueryform').addEventListener('submit', function(e
     event.preventDefault();
     const input = document.querySelector('#searchquery').value;
     const selectedRadio = document.querySelector('input[name="searchengine"]:checked');
+    if (!input) {
+        document.getElementById('searchconfirmation').textContent = "Please enter a search query.";
+        return;
+    }
     if (!selectedRadio) {
         document.getElementById('searchconfirmation').textContent = "Select a valid search engine.";
         return;
